@@ -1,0 +1,30 @@
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
+kind: Kustomization
+metadata:
+  name: nginx8-wego-apps-dir
+  namespace: wego-system
+spec:
+  interval: 1m0s
+  path: .wego/apps/nginx8
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: nginx8
+  validation: client
+
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
+kind: Kustomization
+metadata:
+  name: docker-desktop-nginx8
+  namespace: wego-system
+spec:
+  interval: 1m0s
+  path: .wego/targets/docker-desktop
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: nginx8
+  validation: client
+
