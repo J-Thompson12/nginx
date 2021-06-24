@@ -7,7 +7,7 @@ metadata:
 spec:
   interval: 30s
   ref:
-    branch: main
+    branch: master
   secretRef:
     name: weave-gitops-docker-desktop-nginx
   url: ssh://git@github.com/J-Thompson12/nginx.git
