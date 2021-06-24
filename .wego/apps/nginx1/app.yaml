@@ -1,0 +1,10 @@
+---
+apiVersion: wego.weave.works/v1alpha1
+kind: Application
+metadata:
+  name: nginx1
+  labels:
+    name: wego-0cf1a950c7a8bbceb938e9312fa72cfc
+spec:
+  path: ./
+  url: ssh://git@github.com/J-Thompson12/nginx.git
