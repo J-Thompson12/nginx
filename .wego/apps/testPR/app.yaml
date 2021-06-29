@@ -1,0 +1,10 @@
+---
+apiVersion: wego.weave.works/v1alpha1
+kind: Application
+metadata:
+  name: testPR
+  labels:
+    weave-gitops.weave.works/app-identifier: wego-99345fe6d15650a1429ebe2dfe22bbac
+spec:
+  path: ./new
+  url: ssh://git@github.com/J-Thompson12/nginx.git
