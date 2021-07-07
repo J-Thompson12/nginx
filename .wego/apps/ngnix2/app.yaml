@@ -1,0 +1,11 @@
+---
+apiVersion: wego.weave.works/v1alpha1
+kind: Application
+metadata:
+  name: ngnix2
+  namespace: wego-system
+  labels:
+    weave-gitops.weave.works/app-identifier: wego-c2cb17e3fac80d60a5b043cc1ad58a74
+spec:
+  path: ./ngnix2
+  url: ssh://git@github.com/J-Thompson12/nginx.git
