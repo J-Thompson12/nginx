@@ -12,5 +12,4 @@ spec:
     kind: GitRepository
     name: nginx
   validation: client
-  suspend: true
 
