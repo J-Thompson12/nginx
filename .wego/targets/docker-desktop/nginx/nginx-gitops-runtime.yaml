@@ -1,18 +1,4 @@
 ---
-apiVersion: source.toolkit.fluxcd.io/v1beta1
-kind: GitRepository
-metadata:
-  name: nginx
-  namespace: wego-system
-spec:
-  interval: 30s
-  ref:
-    branch: main
-  secretRef:
-    name: weave-gitops-docker-desktop-nginx
-  url: ssh://git@github.com/J-Thompson12/nginx.git
-
----
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
 kind: Kustomization
 metadata:
@@ -26,4 +12,18 @@ spec:
     kind: GitRepository
     name: nginx
   validation: client
+
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: nginx
+  namespace: wego-system
+spec:
+  interval: 30s
+  ref:
+    branch: main
+  secretRef:
+    name: weave-gitops-docker-desktop-nginx
+  url: ssh://git@github.com/J-Thompson12/nginx.git
 
