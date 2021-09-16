@@ -8,7 +8,6 @@ metadata:
   namespace: wego-system
 spec:
   branch: main
-  config_url: ssh://git@github.com/J-Thompson12/nginx.git
   deployment_type: kustomize
   path: ./
   source_type: git
