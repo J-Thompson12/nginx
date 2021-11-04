@@ -6,7 +6,6 @@ metadata:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-
   name: nginx
   namespace: my-nginx
   labels:
@@ -18,7 +17,7 @@ spec:
       name: nginx
   template:
     metadata:
-      namespace: my-nginx
+      namespace: my-ng
       labels:
         name: nginx
     spec:
