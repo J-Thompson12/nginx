@@ -1,0 +1,15 @@
+---
+apiVersion: wego.weave.works/v1alpha1
+kind: Application
+metadata:
+  labels:
+    wego.weave.works/app-identifier: wego-c5693eb93e4ec7e43022c47f962f8726
+  name: fakebitch
+  namespace: wego-system
+spec:
+  branch: main
+  config_url: ssh://git@github.com/J-Thompson12/nginx.git
+  deployment_type: helm
+  path: fakebitch
+  source_type: helm
+  url: https://charts.kube-ops.io
