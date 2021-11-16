@@ -1,0 +1,15 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: generate
+  namespace: wego-system
+spec:
+  chart:
+    spec:
+      chart: generate
+      sourceRef:
+        kind: HelmRepository
+        name: generate
+  interval: 5m0s
+
