@@ -4,4 +4,6 @@ metadata:
   name: nginx
   namespace: wego-system
 resources:
-- ../../../apps/nginx
+- app.yaml
+- nginx-gitops-deploy.yaml
+- nginx-gitops-source.yaml
