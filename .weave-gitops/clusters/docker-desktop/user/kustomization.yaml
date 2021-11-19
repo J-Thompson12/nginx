@@ -3,5 +3,3 @@ kind: Kustomization
 metadata:
   name: wego-app-nginx
   namespace: wego-system
-resources:
-- ../../../apps/nginx
