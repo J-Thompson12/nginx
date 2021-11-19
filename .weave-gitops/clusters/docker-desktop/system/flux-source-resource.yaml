@@ -2,7 +2,7 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: GitRepository
 metadata:
-  name: wego-auto-github-nginx
+  name: wego-github-nginx
   namespace: wego-system
 spec:
   interval: 30s
