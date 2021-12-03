@@ -4,4 +4,6 @@ metadata:
   name: graf
   namespace: wego-system
 resources:
-- ../../../apps/graf
+- app.yaml
+- graf-gitops-deploy.yaml
+- graf-gitops-source.yaml
