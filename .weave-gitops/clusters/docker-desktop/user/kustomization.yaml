@@ -4,5 +4,4 @@ metadata:
   name: graf
   namespace: wego-system
 resources:
-- ../../../apps/nginx
 - ../../../apps/graf
