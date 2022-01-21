@@ -7,11 +7,11 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx
-  namespace: my-ngin
+  namespace: my-nginx
   labels:
     name: nginx
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       name: nginx
@@ -22,7 +22,7 @@ spec:
         name: nginx
     spec:
       containers:
-      - name: nginxf
-        image: nginxs
+      - name: nginx
+        image: nginx
         ports:
         - containerPort: 80
